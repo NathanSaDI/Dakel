@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('POLICE/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('POLICE/Montserrat-Bold.ttf');
+}
+
+body {
+    padding: 0%;
+    margin: 0%;
+}
+header {
+    display: flex;
+    background-color: #DDF7C5;
+    width: 100%;
+    height: 65px;
+}
+
+header a img {
+    /* display: inline-flex; */
+    /* margin: 5.8% 15%; */
+    display: flex;
+    margin: 6% 15%;
+    max-height: 60%;
+    /* border: 1px solid #f9fefa; */
+    cursor: pointer;
+}
+
+header div {
+    margin: auto 65%;
+    display: flex;
+    gap: 15px;
+}
+
+#lienacc {
+    /* border: 1px solid #000; */
+    cursor: default;
+}
+
+#inscription {
+    width: 131px;
+    height: 30px;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: medium;
+    background-color: #337C52;
+    color: #DDF7C5;
+    border-radius: 25px;
+    border: 3px solid #337C52;
+    font-weight: 600;
+    font-size: 13.5px;
+    font-style: normal;
+    line-height: 22px;
+    cursor: pointer;
+}
+
+#connexion {
+    width: 131px;
+    height: 30px;
+    text-align: center;
+    margin-right: 10px;
+    font-family: 'Montserrat';
+    font-size: medium;
+    background-color: #DDF7C5;
+    color: #337C52;
+    border: 2.7px solid #337C52;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 13.5px;
+    font-style: normal;
+    line-height: 22px;
+    cursor: pointer;
+}
+h1{
+    font-family: 'Montserrat-Bold';
+    font-size: 40px;
+    color: #01613b;
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 30px;
+    color: #252525;
+}
+#text{
+    border: 1px solid #909090;
+    background-color: #F5F5F5;
+    font-family: 'Montserrat';
+    color: #909090;
+    padding: 1%;
+    margin: 1% auto;
+    width: 50%;
+    border-radius: 17px;
+    font-size: 20px;
+    line-height: 24px;
+}

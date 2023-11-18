@@ -1,0 +1,440 @@
+* {
+    box-sizing: border-box;
+    /* font-family: 'Montserrat'; */
+}
+
+
+
+@font-face {
+    font-family: 'Montserrat';
+    /* Remplacez "MaPolice" par le nom que vous souhaitez donner à votre police */
+    src: url('POLICE/Montserrat-Regular.ttf') format('truetype');
+    /* Chemin vers votre fichier de police */
+    /* Ajoutez d'autres déclarations de format pour prendre en charge différents types de fichiers de police */
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('POLICE/Montserrat-Bold.ttf');
+}
+
+body {
+    padding: 0%;
+    margin: 0%;
+}
+
+header {
+    width: 100%;
+    height: 65px;
+    background-color: #DDF7C5;
+    margin: 0%;
+}
+
+#petitmenu {
+    float: right;
+    display: flex;
+    align-items: center;
+    margin: 0.5% 2%;
+}
+
+#logo {
+    float: left;
+    width: 10%;
+    height: 55%;
+    margin: 0.85% 3% 3% 1.5%;
+}
+
+#rechercher {
+    width: 150px;
+    height: 28px;
+    border: 3.3px solid #01613B;
+    border-radius: 25px;
+    background: #DDF7C5;
+    font-weight: 500;
+    font-size: 16px;
+    color: #01613B;
+    text-align: center;
+    cursor: pointer;
+    font-family: "Montserrat";
+
+}
+
+#rechercher img {
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin: 2px auto;
+}
+
+#menu {
+    float: right;
+    width: 50px;
+    height: 30px;
+    background: none;
+    margin: 1% 0.2%;
+    border: none;
+    cursor: pointer;
+}
+
+#fleche {
+    height: 12px;
+    width: 20px;
+    display: inline;
+}
+
+#lolo {
+    float: right;
+    height: 45px;
+    width: 45px;
+    margin-left: 10%;
+}
+
+
+ul {
+    position: absolute;
+    list-style-type: none;
+    background: #f2faeb;
+    height: 200px;
+    width: 250px;
+    left: 79.9%;
+    top: 7.3%;
+    padding: 0%;
+    font-family: 'Montserrat';
+}
+
+ul a li {
+    height: 50px;
+    width: 250px;
+    text-align: left;
+    padding: 15px 15px;
+    color: #01613b;
+}
+
+ul a li:hover {
+    background: #fff;
+}
+
+
+.bordure {
+    border-bottom: 1px solid #909090;
+    width: 250px;
+
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+ul a {
+    text-decoration: none;
+    color: #909090;
+    font-weight: 500;
+}
+
+ul a li img {
+    float: left;
+    margin-right: 4.5%;
+}
+.droite {
+    float: right;
+}
+form {
+/*    border: 2px solid #000;*/
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3% 0%;
+
+}
+
+#divgen {
+/*    border: 2px solid red; */
+    width: 56%;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    height: 8vh;
+    background-color: #e8e8e8;
+    margin: 0%;
+}
+
+
+
+form div img {
+    margin: 20px 10px;
+
+}
+
+form div input {
+    height: 49px;
+    background-color: #e8e8e8;
+    font-family: "Montserrat";
+    padding-left: 1.4%;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 800;
+    width: 25%;
+    border: none;
+    outline: none;
+}
+.rechercher {
+    margin-left: 18px;
+    border-radius: 24px;
+    width: 25%;
+    background-color: #dff5df;
+    border: 3px solid #01613B;
+    height: 52px;
+    cursor: pointer;
+    color: #01613B;
+    font-size: 16px;
+    font-weight: 800;
+    font-family: "Montserrat";
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+main{
+    background-color: #F9F7F7;
+    height: 700px;
+    display: flex;
+}
+#Filtres{
+    display: block;
+    width: 35%;
+    height: 400px;
+    margin-left: 10%;
+}
+.filtre{
+    border: 1px solid #f9f7f7;
+    height: 200px;
+    margin-top: 3%;
+}
+h2{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 20px;
+    color: #01613b;
+}
+.element{
+    display: flex;
+    align-items: center;
+    height: 20%;
+}
+.elmnt1{
+    width: 78%;
+}
+label{
+    font-family: 'Montserrat';
+    font-size: 17px;
+    font-weight: 500;
+    color: #252525;
+    display: flex;
+    align-items: center;
+    width: 70%;
+
+}
+label p{
+    width: 80%;
+}
+.elmnt1 p{
+    width: 83%;
+}
+.element img {
+    height: 22px;
+    width: 5%;
+    margin-right: 3%;
+}
+.Check{
+    -webkit-appearance: none;
+    border: 2px solid #01613b;
+    background-color: white;
+    cursor: pointer;
+    border: 1px solid #01613b;
+    height: 13px;
+    width: 13px;
+    border-radius: 4px;
+}
+.Check:checked{
+    background-image: url("Icons/check.png") ;
+}
+#barre{
+    border: 2px solid #909090;
+    width: 60%;
+}
+#Trajets{
+    display: block;
+    width: 40%;
+    margin-left: 5%;
+}
+#textes{
+    font-family: 'Montserrat';
+    display: block;
+    margin: 0%;
+}
+h3{
+/*    border: 1px solid black;*/
+    font-family: 'Montserrat-Bold';
+    font-size: 25px;
+    color: #01613b;
+    margin: 0%;
+}
+#textes p{
+    color: #909090;
+    height: 2s0px;
+    margin: 1%;
+}
+
+#lieux{
+/*    border: 1px solid black;*/
+    display: flex;
+    align-items: center;
+    height: 20px;
+    gap: 5px;
+    margin: 1% 0%;
+}
+#infhaut{
+    display: flex;
+    width: 100%;
+    height: 50%;
+}
+.info-trajet {
+    background: white;
+    box-shadow: -2px 17px 11px 4px rgba(112, 111, 111, 0.33);
+    border-radius: 29px;
+    width: 90%;
+    height: 150px;
+    margin-top: 4%;
+    display: block;
+    padding-left: 3%;
+}
+#rcpgauche{
+/*    border: 2px solid red;*/
+    display: flex;
+    width: 30%;
+    height: 100%;
+    font-size: 15px;
+    margin-top: 2%;
+}
+.heures{
+    display: inline;
+    height: 100%;
+}
+
+.heure {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #909090;
+    height: 25%;
+    margin: 0%;
+    text-align: center;
+}
+#down{
+    margin-top: 65%;
+}
+#downh{
+    margin-top: 70%;
+    color: #252525;
+    font-weight: 500;
+}
+#heuredep{
+    color: #01613b;
+    font-weight: 500;
+}
+
+#linetrajet {
+    height: 80%;
+    width: 10%;
+    margin: 6% 5%;
+}
+
+#icons {
+    height: 55%;
+    width: 22%;
+    display: flex;
+    align-items: center;
+    margin-left: 46%;
+    gap: 10%;    
+}
+
+#text-prix {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #D66947;
+    height: 30%;
+    width: 25%;
+    margin: 2% 5% 0% 40%;
+}
+
+#text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #909090;
+    height: 23%;
+    width: 65%;
+    margin: 0% auto;
+}
+#infbas{
+    display: flex;
+    align-items: center;
+    height: 35%;
+    margin-top: 3%;
+
+}
+#conducteur{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 25%;
+}
+#conducteur img{
+    height: 70%;
+    width: 35%;
+    border-radius: 20px;
+}
+#infconducteur{
+    display: block;
+    width: 50%;
+    margin-left: 4%;
+}
+#infconducteur p{
+    height: 30%;
+    margin: 0%;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    color: #01613b;
+}
+#note{
+    display: flex;
+    height: 30%;
+    align-items: center;
+}
+#note p{
+    font-size: 12px;
+    color: #909090;
+    font-weight: 200;
+    margin-left: 10%;
+}
+#note img{
+    height: 15px;
+    width: 15px;
+    border-radius: 0;
+}
+a{
+    text-decoration: none;
+}

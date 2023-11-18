@@ -1,0 +1,525 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+
+
+@font-face {
+    font-family: 'Montserrat';
+    /* Remplacez "MaPolice" par le nom que vous souhaitez donner à votre police */
+    src: url('POLICE/Montserrat-Regular.ttf') format('truetype');
+    /* Chemin vers votre fichier de police */
+    /* Ajoutez d'autres déclarations de format pour prendre en charge différents types de fichiers de police */
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('POLICE/Montserrat-Bold.ttf');
+}
+
+
+body {
+    padding: 0%;
+    margin: 0%;
+}
+
+header {
+    width: 100%;
+    height: 65px;
+    background-color: #DDF7C5;
+}
+
+#petitmenu {
+    float: right;
+    display: flex;
+    align-items: center;
+    margin: 0.5% 2%;
+}
+
+#logo {
+    float: left;
+    width: 10%;
+    height: 55%;
+    margin: 0.85% 3% 3% 1.5%;
+}
+
+#rechercher {
+    width: 150px;
+    height: 28px;
+    border: 3.3px solid #01613B;
+    border-radius: 25px;
+    background: #DDF7C5;
+    font-weight: 500;
+    font-size: 16px;
+    color: #01613B;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+#rechercher img {
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin: 2px auto;
+}
+
+#menu {
+    float: right;
+    width: 50px;
+    height: 30px;
+    background: none;
+    margin: 1% 0.2%;
+    border: none;
+    cursor: pointer;
+}
+
+#fleche {
+    height: 12px;
+    width: 20px;
+    display: inline;
+}
+
+#lolo {
+    float: right;
+    height: 45px;
+    width: 45px;
+    margin-left: 10%;
+}
+
+
+ul {
+    position: absolute;
+    list-style-type: none;
+    background: #f2faeb;
+    height: 200px;
+    width: 250px;
+    left: 79.9%;
+    top: 7.3%;
+    padding: 0%;
+}
+
+ul a li {
+    height: 50px;
+    width: 250px;
+    text-align: left;
+    padding: 15px 15px;
+    color: #01613b;
+}
+
+ul a li:hover {
+    background: #fff;
+}
+
+
+.bordure {
+    border-bottom: 1px solid #909090;
+    width: 250px;
+
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+ul a {
+    text-decoration: none;
+    color: #909090;
+    font-weight: 500;
+}
+
+ul a li img {
+    float: left;
+    margin-right: 4.5%;
+}
+
+.droite {
+    float: right;
+}
+
+form {
+    /* border: 1px solid black; */
+    margin: 0% auto;
+    display: block;
+    width: 60%;
+
+}
+
+#infotrajet {
+    /* border: 1px solid black; */
+    /*ici on mettra un border bottom*/
+    margin: 5% auto 2%;
+    width: 88%;
+    display: block;
+    padding-top: 0%;
+
+}
+
+#date {
+    /* border: 1px solid black; */
+    text-align: center;
+    margin: 4% auto;
+    width: 30%;
+}
+
+#date p {
+    color: #01613B;
+    font-family: "Montserrat-Bold";
+    font-size: 29px;
+    margin-top: 2%;
+    margin-bottom: 0;
+
+}
+
+#heurelieu {
+    /* border: 1px solid #01613b; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 80%; */
+    width: 100%;
+    /* height: 100%; */
+    gap: 3%;
+}
+
+#heure {
+    display: block;
+    margin-top: 0%;
+    /* border: 1px solid #01613B; */
+    height: 85px;
+    /* margin-block-start: 50%; */
+    /* margin-block: 5%; */
+    /* height: 50px; */
+}
+
+.top {
+    /* float: left; */
+}
+
+#bottom {
+    margin-top: 75%;
+    text-align: right;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 17px;
+    color: #909090;
+
+}
+
+#top {
+    /* border: 1px solid #01613B; */
+    text-align: right;
+    margin: 0%;
+    /* margin-block-start: 50%; */
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 17px;
+    color: #909090;
+    /* margin-block: 90%; */
+}
+
+#lieu {
+    display: block;
+    /* border: 1px solid #000; */
+    width: 35%;
+
+}
+
+#depart {
+    display: flex;
+    width: 100%;
+    /* border: 1px solid #000; */
+    align-items: center;
+    /* justify-content: center; */
+    gap: 43%;
+
+}
+
+#arriver {
+    display: flex;
+    width: 100%;
+    /* border: 1px solid #000; */
+    align-items: center;
+    gap: 43%;
+    /* justify-content: center; */
+}
+
+#arriver img {
+    width: 9px;
+    height: 14px;
+}
+
+#arriver p {
+    width: 50%;
+    font-family: "Montserrat";
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #909090;
+}
+
+#depart p {
+    width: 50%;
+    font-family: "Montserrat";
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #909090;
+}
+
+#depart img {
+    width: 9px;
+    height: 14px;
+}
+
+#image {
+    align-items: center;
+    /* border: 1px solid salmon; */
+}
+
+#image img {
+    width: 27px;
+    height: 80px;
+}
+
+
+
+#condi {
+    margin: 0% auto;
+    /* height: 80px; */
+    padding: 0%;
+
+}
+
+#condi div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid #000; */
+    /* margin: 0%; */
+    gap: 3%;
+    margin-block: 0.9%;
+}
+
+#condi div p {
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 400;
+    color: #01613B;
+    width: 45%;
+    margin: 0%;
+    /* border: 1px solid #000; */
+}
+
+#condi div img {
+    height: 22px;
+}
+
+#voiture {
+    display: block;
+    /* border: 1px solid #000; */
+    margin: 3% 0%;
+
+}
+
+#voiture p {
+    /* margin-top: 0 */
+    margin-left: 20%;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+.gris {
+    color: #909090;
+}
+
+.vert {
+    color: #01613B;
+}
+
+#infopassager {
+    margin: 0% auto;
+    width: 88%;
+}
+
+#titre {
+    width: 60%;
+    margin: 1% auto;
+}
+
+#titre h1 {
+    margin: 0% 5% 2%;
+    font-size: 19px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    color: #01613B;
+}
+
+#p1 {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* margin-left: 10%; */
+    margin: 2.5% 8% 2.5%;
+    gap: 75%;
+}
+
+#pl1 p {
+    margin: 0%;
+    margin-left: 0.5%;
+    color: #01613B;
+}
+
+#note {
+    display: flex;
+    /* height: 30px; */
+    align-items: center;
+    /* padding: 1%; */
+    margin-top: 2%;
+}
+
+#note img {
+    width: 12px;
+    height: 12px;
+    margin-left: 1%;
+}
+
+#note p {
+    color: #909090;
+    font-weight: 600;
+    margin-left: 2.5%;
+
+}
+
+#pl1 {
+    /* border: 1px solid #000; */
+    width: 20%;
+
+}
+
+#imghomme {
+    width: 7%;
+    height: 7%;
+}
+
+#infoconducteur {
+    margin: 0% auto;
+    width: 88%;
+}
+
+#p2 {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    margin-top: 4%;
+    gap: 70%;
+}
+
+#pl2 p {
+    margin: 0%;
+    margin-bottom: 2%;
+    /* margin-left: 0.5%; */
+    color: #01613B;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#note2 {
+    display: flex;
+    /* height: 30px; */
+    align-items: center;
+    /* padding: 1%; */
+}
+
+#note2 p {
+    font-size: 15px;
+    color: #909090;
+    margin-left: 2.5%;
+}
+
+#note2 img {
+    width: 10px;
+    height: 10px;
+}
+
+#pl2 {
+    /* border: 1px solid #000; */
+    width: 20%;
+
+}
+
+#imgfemme {
+    width: 8%;
+    height: 8%;
+}
+
+#bio {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+#oulach{
+    font-size: 20px;
+    font-weight: 500;
+    color: #909090;
+    margin-left:15%;
+}
+
+#bio p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #909090;
+}
+
+#prixpersonne {
+    display: block;
+    margin: 0 auto;
+}
+
+#dernierdiv {
+    display: flex;
+    /* border: 1px solid #01613B; */
+    align-items: center;
+    gap: 20%;
+    width: 100%;
+}
+
+#ohlala {
+    margin-left: 17%;
+    width: 40%;
+    /* border: 1px solid #000; */
+    display: flex;
+    font-size: 15px;
+    color: #909090;
+    line-height: 22px;
+    font-weight: 600;
+}
+
+#prix {
+    color: #01613B;
+    font-weight: 600;
+}
+
+#sub {
+    display: block;
+    margin: 2% auto;
+    background: #01613B;
+    border-radius: 21px;
+    padding: 2px 20px;
+    color: white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 22px;
+    cursor: pointer;
+    width: 110px;
+    height: 30px;
+    border: none;
+}
+
+.borderbottom {
+    border-bottom: 4px solid #909090;
+}

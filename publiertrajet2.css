@@ -1,0 +1,358 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+
+
+@font-face {
+    font-family: 'Montserrat';
+    /* Remplacez "MaPolice" par le nom que vous souhaitez donner à votre police */
+    src: url('POLICE/Montserrat-Regular.ttf') format('truetype');
+    /* Chemin vers votre fichier de police */
+    /* Ajoutez d'autres déclarations de format pour prendre en charge différents types de fichiers de police */
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('POLICE/Montserrat-Bold.ttf');
+}
+
+
+body {
+    padding: 0%;
+    margin: 0%;
+}
+
+header {
+    width: 100%;
+    height: 65px;
+    background-color: #DDF7C5;
+}
+
+#petitmenu {
+    float: right;
+    display: flex;
+    align-items: center;
+    margin: 0.5% 2%;
+}
+
+#logo {
+    float: left;
+    width: 10%;
+    height: 55%;
+    margin: 0.85% 3% 3% 1.5%;
+}
+
+#rechercher {
+    width: 150px;
+    height: 28px;
+    border: 3.3px solid #01613B;
+    border-radius: 25px;
+    background: #DDF7C5;
+    font-weight: 500;
+    font-size: 16px;
+    color: #01613B;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+#rechercher img {
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin: 2px auto;
+}
+
+#menu {
+    float: right;
+    width: 50px;
+    height: 30px;
+    background: none;
+    margin: 1% 0.2%;
+    border: none;
+    cursor: pointer;
+}
+
+#fleche {
+    height: 12px;
+    width: 20px;
+    display: inline;
+}
+
+#lolo {
+    float: right;
+    height: 45px;
+    width: 45px;
+    margin-left: 10%;
+}
+
+
+ul {
+    position: absolute;
+    list-style-type: none;
+    background: #f2faeb;
+    height: 200px;
+    width: 250px;
+    left: 79.9%;
+    top: 7.3%;
+    padding: 0%;
+}
+
+ul a li {
+    height: 50px;
+    width: 250px;
+    text-align: left;
+    padding: 15px 15px;
+    color: #01613b;
+}
+
+ul a li:hover {
+    background: #fff;
+}
+
+
+.bordure {
+    border-bottom: 1px solid #909090;
+    width: 250px;
+
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+ul a {
+    text-decoration: none;
+    color: #909090;
+    font-weight: 500;
+}
+
+ul a li img {
+    float: left;
+    margin-right: 4.5%;
+}
+
+.droite {
+    float: right;
+}
+
+#publier {
+
+    margin: 8% 0 1% 0;
+    text-align: center;
+    color: #01613b;
+}
+
+#publier h1 {
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 22px;
+}
+
+#numetape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#cercle4 {
+    background: #01613B;
+    color: #FFFF;
+}
+
+.ligne {
+    width: 122px;
+    height: 0px;
+    border: 2px solid #01613b;
+    margin: 0.3%;
+}
+
+.cercle {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: 2.5px solid #01613b;
+    background: white;
+    color: #01613B;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.3%;
+}
+
+form {
+    /* border: 1px solid #000; */
+    margin: 2.5% auto;
+    width: 80%;
+    height: 200px;
+    justify-content: center;
+}
+
+form div {
+    /* border: 1px solid #000; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 10vh;
+    gap: 5%;
+}
+
+.inputnrml2 {
+    display: inline;
+    width: 11%;
+    height: 64%;
+    border-radius: 13px;
+    background: #E0DDDD;
+    border: 1px solid #909090;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    padding-left: 1.5%;
+}
+
+.inputnrml2::-webkit-calendar-picker-indicator,
+.inputnrml2::-webkit-inner-spin-button,
+.inputnrml2::-webkit-clear-button {
+    /* display: none; */
+    /* Masquer l'icône d'horloge sur les navigateurs WebKit */
+    background: url("Icons/horloge.png");
+    background-repeat: no-repeat;
+    margin-right: 2%;
+}
+
+
+.inputnrml {
+    display: inline;
+    width: 23%;
+    height: 64%;
+    border-radius: 13px;
+    background: #E0DDDD;
+    border: 1px solid #909090;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    padding-left: 1.5%;
+}
+
+
+
+
+
+/* #date {
+    position: absolute;
+    top: 58%;
+    left: 30.5%;
+    box-sizing: border-box;
+    background: #E0DDDD;
+    border: 1px solid #909090;
+    border-radius: 13px;
+    width: 220px;
+    height: 33px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1%;
+    padding-right: 1%;
+} */
+
+/* #temps {
+    position: absolute;
+    top: 58%;
+    left: 48.5%;
+    box-sizing: border-box;
+    background: #E0DDDD;
+    border: 1px solid #909090;
+    border-radius: 13px;
+    width: 120px;
+    height: 33px;
+    font-family: 'Montserrat';
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1.5%;
+    padding-right: 1%;
+} */
+
+#next {
+    position: absolute;
+    top: 70%;
+    left: 51%;
+    background: #01613B;
+    border-radius: 21px;
+    padding: 2px 20px;
+    color: white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 110px;
+    height: 30px;
+    border: none;
+}
+
+#before {
+    position: absolute;
+    border: none;
+    top: 70%;
+    left: 41%;
+    background: #01613B;
+    border-radius: 21px;
+    padding: 2px 20px;
+    color: white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 110px;
+    height: 30px;
+
+}
+
+/* input {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+
+} */
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: url("Icons/calendar.png");
+  
+    margin-right: 2%;
+}
+
+#civilite {
+    color: #909090;
+}
+
+input:focus {
+    outline: #909090;
+}

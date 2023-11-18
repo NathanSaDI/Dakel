@@ -1,0 +1,504 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+
+
+@font-face {
+    font-family: 'Montserrat';
+    /* Remplacez "MaPolice" par le nom que vous souhaitez donner à votre police */
+    src: url('POLICE/Montserrat-Regular.ttf') format('truetype');
+    /* Chemin vers votre fichier de police */
+    /* Ajoutez d'autres déclarations de format pour prendre en charge différents types de fichiers de police */
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('POLICE/Montserrat-Bold.ttf');
+}
+
+
+body {
+    padding: 0%;
+    margin: 0%;
+}
+
+header {
+    width: 100%;
+    height: 65px;
+    background-color: #DDF7C5;
+}
+
+#petitmenu {
+    float: right;
+    display: flex;
+    align-items: center;
+    margin: 0.5% 2%;
+}
+
+#logo {
+    float: left;
+    width: 10%;
+    height: 55%;
+    margin: 0.85% 3% 3% 1.5%;
+}
+
+#rechercher {
+    width: 150px;
+    height: 28px;
+    border: 3.3px solid #01613B;
+    border-radius: 25px;
+    background: #DDF7C5;
+    font-weight: 500;
+    font-size: 16px;
+    color: #01613B;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+#rechercher img {
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin: 2px auto;
+}
+
+#menu {
+    float: right;
+    width: 50px;
+    height: 30px;
+    background: none;
+    margin: 1% 0.2%;
+    border: none;
+    cursor: pointer;
+}
+
+#fleche {
+    height: 12px;
+    width: 20px;
+    display: inline;
+}
+
+#lolo {
+    float: right;
+    height: 45px;
+    width: 45px;
+    margin-left: 10%;
+}
+
+
+ul {
+    position: absolute;
+    list-style-type: none;
+    background: #f2faeb;
+    height: 200px;
+    width: 250px;
+    left: 79.9%;
+    top: 7.3%;
+    padding: 0%;
+}
+
+ul a li {
+    height: 50px;
+    width: 250px;
+    text-align: left;
+    padding: 15px 15px;
+    color: #01613b;
+}
+
+ul a li:hover {
+    background: #fff;
+}
+
+
+.bordure {
+    border-bottom: 1px solid #909090;
+    width: 250px;
+
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+ul a {
+    text-decoration: none;
+    color: #909090;
+    font-weight: 500;
+}
+
+ul a li img {
+    float: left;
+    margin-right: 4.5%;
+}
+
+.droite {
+    float: right;
+}
+
+form {
+    margin: 2.5% auto;
+    width: 80%;
+    height: 58vh;
+    justify-content: center;
+    /* border: 1px solid #000; */
+}
+
+#infotrajet {
+    background: #F5F5F5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    width: 65%;
+    height: 160px;
+    margin: 0.4% auto;
+    display: flex;
+    /* padding-left: 3%; */
+    /* margin: 0%; */
+    padding: 0%;
+}
+
+#nomage {
+    display: block;
+    width: 50%;
+    margin-left: 2.5%;
+    /* border: 1px solid #000; */
+    height: 35%;
+}
+
+#prenom {
+    font-family: "Montserrat-Bold";
+    color: #01613B;
+    margin: 0%;
+    font-size: 24px;
+}
+
+#age {
+    display: block;
+    margin: 0%;
+    color: #01613B;
+    font-size: 18px;
+    font-family: "Montserrat";
+}
+
+#hautgauche {
+    /* border: 1px solid #000; */
+    width: 80%;
+}
+
+#ajoutimg {
+    /* border: 1px solid #000; */
+    display: flex;
+    height: 40px;
+    align-items: center;
+    margin-top: 5%;
+}
+
+#ajoutbio {
+    /* border: 1px solid #000; */
+    display: flex;
+    height: 40px;
+    align-items: center;
+
+}
+
+#add1 {
+    height: 20px;
+    width: 20px;
+    margin: auto 15px;
+    cursor: pointer;
+}
+
+#inputphoto {
+    border: 1px solid #000;
+    width: 0px;
+    height: 0px;
+    color: #F5F5F5;
+
+}
+
+#add2 {
+    height: 20px;
+    width: 20px;
+    margin: auto 15px;
+    cursor: pointer;
+}
+
+#bio {
+    /* border: 1px solid #000; */
+    /* width: 1px;
+    height: 1px; */
+
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.displaynone {
+    display: none;
+}
+
+#hautdroite {
+    /* border: 1px solid #000; */
+    margin-left: 20%;
+    width: 85%;
+    justify-content: end;
+    align-items: center;
+}
+
+#blob1 {
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: center;
+    margin-left: 60%;
+    border-radius: 62px;
+    width: 100px;
+    height: 100px;
+    /* margin-right: 20%; */
+    /* width: 100%; */
+
+}
+
+#blob1 img {
+    margin: 2px auto;
+    width: 98%;
+    height: 98%;
+    border-radius: 60px;
+
+}
+
+#lieninfo {
+    color: #01613B;
+    /* display: flex; */
+    /* text-decoration: none; */
+    font-size: 14px;
+    /* margin-top: 30px; */
+
+    /* width: 40%; */
+}
+
+#liendiv {
+    /* border: 1px solid #000; */
+    margin-top: 30px;
+    text-align: center;
+}
+
+#bio {
+    background: #F5F5F5;
+
+    font-family: "Montserrat";
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    border: none;
+    color: #01613B;
+}
+
+#bio:focus {
+    background-color: white;
+    outline: #909090;
+}
+
+p {
+    color: #909090;
+    font-weight: 600;
+    /* font-size: 24px; */
+}
+
+#profil2 {
+    background: #F5F5F5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    width: 65%;
+    height: 100px;
+    margin: 2% auto;
+    display: block;
+    padding-top: 0.2%;
+    /* padding: auto; */
+    /* margin-top: 2%; */
+    /* padding-left: 3%; */
+    /* margin: 0%; */
+    /* padding: 0%; */
+
+}
+
+.sinp {
+    font-size: 16px;
+    background-color: #F5F5F5;
+    font-weight: 600;
+    /* font-family: "Montserrat-Bold"; */
+    color: #01613B;
+    width: 100%;
+    border: none;
+}
+
+.sinp:focus {
+    display: none;
+}
+
+#profil2 div {
+    display: flex;
+    height: 20px;
+    /* border: 1px solid #01613B; */
+    align-items: center;
+    margin-block: 1%;
+    /* gap: 60%; */
+}
+
+#profil2 div p {
+    font-weight: 600;
+}
+
+#profil2 div img {
+    height: 20px;
+    width: 20px;
+    margin: auto 15px;
+
+}
+
+.pointer {
+    cursor: pointer;
+    margin-top: 3%;
+}
+
+#inputpermis {
+    width: 0;
+    height: 0;
+}
+
+
+
+
+#vehicule {
+    background: #F5F5F5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    width: 65%;
+    height: 95px;
+    margin: 0.4% auto;
+    display: block;
+    /* padding-top: 0px; */
+    /* margin-top: 2%; */
+    /* justify-content: center;
+    align-items: center; */
+
+
+    /* padding-left: 3%; */
+    /* margin: 0%; */
+    /* padding: 0%; */
+
+
+
+}
+
+#vdiv {
+    /* border: 1px solid #000; */
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    height: 35px;
+    margin-top: 2%;
+    /* float: left; */
+    /* margin-top: 15px; */
+
+
+}
+
+#divtitre {
+    /* padding: auto 0%; */
+    /* align-items: center; */
+    padding-left: 2.4%;
+    padding-top: 1%;
+    margin-top: 2%;
+    /* border: 1px solid #000; */
+    /* vertical-align: middle; */
+    /* text-align: center; */
+    height: 30px;
+
+}
+#vdiv{
+    gap: 1%;
+    align-items: center;
+}
+#vdiv p {
+    font-weight: 600;
+    /* margin-left: 2%; */
+    /* border: 1px solid #000; */
+
+}
+#pipo{
+    /* border: 1px solid #000; */
+    margin-left: 15px;
+    height: 20px;
+    width: 20px;
+}
+
+#titreluimeme {
+    font-size: 20px;
+    font-family: "Montserrat-Bold";
+    /* margin-bottom: 0%; */
+    /* margin-left: 2.5%; */
+    /* margin-top: 2%; */
+
+    color: #01613B;
+}
+
+#vehicule div img {
+    height: 20px;
+    width: 20px;
+    margin: auto 2.5%;
+    cursor: pointer;
+}
+
+#menubas {
+    display: block;
+    /* border: 1px solid #000; */
+    width: 52%;
+    margin: 2px auto;
+
+
+
+}
+
+#menubas div {
+    display: flex;
+    height: 40px;
+    /* border: 1px solid #01613B; */
+    align-items: center;
+    gap: 55%;
+
+}
+
+#menubas div:hover {
+    background-color: #DDF7C5;
+}
+
+#menubas a {
+    text-decoration: none;
+}
+
+#menubas div p {
+    font-weight: 600;
+    margin-left: 8%;
+    /* border: 1px solid #000; */
+    width: 35%;
+
+}
+
+#menubas div img {
+    /* border: 1px solid #0000009c; */
+    height: 13px;
+    width: 9px;
+    margin-right: 5%;
+
+}
+
+.borderdiv {
+    border-top: 1px solid #909090;
+}
+
+.seul {
+    color: #01613B;
+}

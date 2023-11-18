@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rechercher</title>
+    <link rel="stylesheet" href="rechercher.css">
+    <link rel="icon" href="Icons/opop.png" style=" bottom: 9px; ">
+</head>
+
+<body onload="initMap()">
+
+    <header>
+        <a href="Acceuilofficiel1.php"><img id="logo" src="Icons/Dakel-logo 1.png" alt="logo"></a>
+        <div id="petitmenu">
+            <a href="rechercher.html">  <button id="rechercher"><img src="Icons/Rechrche.png" alt="">Rechercher</button> </a>
+            <img id="lolo" src="Icons/Icon profile.png" alt="">
+            <button id="menu"><img id="fleche" src="Icons/flèche.png" alt=""></button>
+        </div>
+    </header>
+
+    <ul id="liste" class="hidden">
+        <a href="Vostrajets.php">
+                <li class="bordure"><img src="Icons/trajets.png" alt="">Vos trajets <img class="droite"
+                        src="Icons/flèche profile.png" alt=""></li>
+            </a>
+    
+            <a href="Vosreservation.php">
+                <li class="bordure"><img src="Icons/reservation.png" alt="">Vos réservations <img class="droite"
+                        src="Icons/flèche profile.png" alt=""></li>
+            </a>
+            <a href="Profil.php">
+                <li class="bordure"><img src="Icons/profil.png" alt="">Profil<img class="droite"
+                        src="Icons/flèche profile.png" alt=""></li>
+            </a>
+            <a href="deconncter.php">
+                <li><img src="Icons/déconnexion.png" alt="">Déconnexion<img class="droite" src="Icons/flèche profile.png"
+                        alt=""></li>
+            </a>
+        </ul>
+    <script>
+        var btnprofl = document.getElementById('menu');
+        var listeul = document.getElementById('liste');
+        function hidde() {
+            listeul.classList.toggle('hidden');
+        }
+        btnprofl.addEventListener('click', hidde);
+    </script>
+    <div id="titre">
+        <h1>Où allez vous ?</h1>
+    </div>
+
+    <form action="rechercher0.php" method="post">
+        <div id="divgen">
+            <img src="Icons/Vector.png" alt=""><input id="dest" type="text" placeholder="Destination" name="Destinationreserver" required>
+            <img src="Icons/Vector.png" alt=""><input id="dep" type="text" placeholder="Départ" name="departreserver" required>
+            <img id="icondate" src="Icons/calendar.png" alt=""><input id="date" type="date" placeholder="Aujourd'hui" name="datereserver" required>
+            <input class="rechercher" type="submit" value="Rechercher" name="signup">
+        </div>
+
+    </form>
+    <div id="ligne"></div>
+    <div id="map" style="height: 0px; width: 0px;"></div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDn9WcfWiphxnllmGuuKyzf49uRoxakvj4&libraries=places"></script>
+    <script>
+        var idd = document.getElementById("date");
+        document.addEventListener('DOMContentLoaded', function () {
+
+            var currentDate = new Date().toISOString().slice(0, 10);
+            idd.value = currentDate;
+        });
+        var inputdep = document.getElementById('dest');
+        var inputdest = document.getElementById('dep');
+
+        function removePlace() {
+            this.removeAttribute('placeholder');
+        }
+
+        inputdep.addEventListener('focus', removePlace);
+        inputdest.addEventListener('focus', removePlace);
+        inputdep.addEventListener('blur', function () {
+            this.setAttribute('placeholder', 'Destination');
+        });
+
+        inputdest.addEventListener('blur', function () {
+            this.setAttribute('placeholder', 'Départ');
+        });
+        var iconcalendar = document.getElementById("icondate");
+        iconcalendar.addEventListener('click', function () {
+            // idd.style.display = "block";
+            idd.focus();
+        });
+
+
+
+        function initMap() {
+      var algeriaBounds = new google.maps.LatLngBounds(
+    new google.maps.LatLng(19.5, -8.7), // sud-ouest
+    new google.maps.LatLng(37.1, 11.9)  // nord-est
+  );
+  
+  var map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 28.0339, lng: 1.6596}, // centre initial de la carte
+    zoom: 5,
+    restriction: {
+      latLngBounds: algeriaBounds,
+      strictBounds: false
+    }
+  });
+
+
+var searchOptions = {
+  componentRestrictions: { country: 'dz' }
+};
+
+var searchBox1 = new google.maps.places.Autocomplete(inputdep, searchOptions);
+var searchBox2 = new google.maps.places.Autocomplete(inputdest, searchOptions);
+
+    }
+
+
+    </script>
+</body>
+
+</html>

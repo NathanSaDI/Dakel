@@ -1,0 +1,273 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+
+
+@font-face {
+    font-family: 'Montserrat';
+    /* Remplacez "MaPolice" par le nom que vous souhaitez donner à votre police */
+    src: url('POLICE/Montserrat-Regular.ttf') format('truetype');
+    /* Chemin vers votre fichier de police */
+    /* Ajoutez d'autres déclarations de format pour prendre en charge différents types de fichiers de police */
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('POLICE/Montserrat-Bold.ttf');
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0%;
+    margin: 0%;
+}
+
+header {
+    display: flex;
+    background-color: #DDF7C5;
+    width: 100%;
+    height: 65px;
+}
+
+header a img {
+    /* display: inline-flex; */
+    /* margin: 5.8% 15%; */
+    display: flex;
+    margin: 6% 15%;
+    max-height: 60%;
+    /* border: 1px solid #f9fefa; */
+    cursor: pointer;
+}
+
+
+#lienacc {
+    
+    cursor: default;
+}
+
+
+
+
+header div {
+    margin: auto 65%;
+    display: flex;
+    gap: 15px;
+  
+}
+
+#inscription {
+    width: 131px;
+    height: 30px;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: medium;
+    background-color: #337C52;
+    color: #DDF7C5;
+    border-radius: 25px;
+    border: 3px solid #337C52;
+    font-weight: 600;
+    font-size: 13.5px;
+    font-style: normal;
+    line-height: 22px;
+    cursor: pointer;
+}
+
+#connexion {
+    width: 131px;
+    height: 30px;
+    text-align: center;
+    margin-right: 10px;
+    font-family: 'Montserrat';
+    font-size: medium;
+    background-color: #DDF7C5;
+    color: #337C52;
+    border: 2.7px solid #337C52;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 13.5px;
+    font-style: normal;
+    line-height: 22px;
+    cursor: pointer;
+}
+
+/* header {
+    position: absolute;
+    display: inline;
+    width: 100%;
+    height: 65px;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    background-color: #DDF7C5;
+}
+
+#logo {
+    float: left;
+    width: 140px;
+    height: 37px;
+    margin: 0.85% 3% 3% 1.5%;
+    cursor: pointer;
+
+}
+
+#connexion {
+    position: absolute;
+    width: 131px;
+    height: 30px;
+    text-align: center;
+    margin-right: 10px;
+    font-family: 'Montserrat';
+    font-size: medium;
+    background-color: #DDF7C5;
+    color: #337C52;
+    border: 2.7px solid #337C52;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 13.5px;
+    font-style: normal;
+    line-height: 22px;
+    cursor: pointer;
+    left: 75.7%;
+    top: 24%;
+}
+
+#inscription {
+    position: absolute;
+    width: 131px;
+    height: 30px;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: medium;
+    background-color: #337C52;
+    color: #DDF7C5;
+    border-radius: 25px;
+    border: 3px solid #337C52;
+    font-weight: 600;
+    font-size: 13.5px;
+    font-style: normal;
+    line-height: 22px;
+    cursor: pointer;
+    left: 86%;
+    top: 24%;
+} */
+
+
+#titreConnexion {
+    margin-top: 10%;
+    text-align: center;
+    color: #01613B;
+    /* font-size: 16px;
+    font-weight: 600;
+    line-height: 22px; */
+}
+
+#titreConnexion h1 {
+    color: #01613B;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 22px;
+    font-family: "Montserrat-Bold";
+}
+
+/* #password {
+    position: absolute;
+    padding: 2px 20px;
+    width: 610px;
+    height: 38px;
+    left: 31%;
+    top: 52%;
+    background: #E0DDDD;
+    border: 1px solid #909090;
+    border-radius: 13px;
+
+}
+
+#email {
+    position: absolute;
+    padding: 2px 20px;
+    width: 610px;
+    height: 38px;
+    left: 31%;
+    top: 43%;
+    background: #E0DDDD;
+    border: 1px solid #909090;
+    border-radius: 13px;
+} */
+
+p {
+    position: absolute;
+    left: 28%;
+    top: 55%;
+    right: 50%;
+    bottom: 37%;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #01613B;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+form {
+    /* display: block; */
+    /* border: 1px solid #000; */
+    margin: 4% auto;
+    width: 80%;
+    height: 34vh;
+    justify-content: center;
+    padding-bottom: 1%;
+}
+
+.inputnormal {
+    display: block;
+    margin: 1% auto;
+    width: 47%;
+    height: 18%;
+    border-radius: 13px;
+    background: #E0DDDD;
+    border: 1px solid #909090;
+    border-radius: 13px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    padding-left: 2.4%;
+}
+
+#sub {
+    margin: 7% auto;
+    display: block;
+    text-align: center;
+    background: #01613B;
+    border-radius: 21px;
+    padding: 2px auto;
+    color: white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 22px;
+    cursor: pointer;
+    width: 11%;
+    height: 30px;
+    border: none;
+}
+
+input:focus {
+    outline: #909090;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
